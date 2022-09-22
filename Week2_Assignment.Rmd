@@ -1,0 +1,23 @@
+---
+title: "Week2 Assignment: INDIA's geographic center"
+date: "September 22, 2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## India
+
+```{r , echo=FALSE}
+library(leaflet)
+map <- leaflet() %>%
+  addTiles()
+map <- map %>%
+  addMarkers(lat = 20.5937, lng = 78.9629, popup = "INDIA")
+map
+```
+
+**Zoom out to view entire map of India**
+
